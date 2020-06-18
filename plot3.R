@@ -17,8 +17,9 @@ plot(x = dateTime, y = data$Sub_metering_1,type="n", ylab = "Energy sub metering
      ylim = c(min(data$Sub_metering_1), max(data$Sub_metering_1))
      )
 
-lines(x = dateTime, y = data$Sub_metering_1,type="l", col = "black")
-lines(x = dateTime, y = data$Sub_metering_2,type="l", col = "red")
-lines(x = dateTime, y = data$Sub_metering_3,type="l", col = "blue")
-legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),pch = c(NA,NA,NA), col = c("black","red","blue") )
+lines(x = dateTime, y = data$Sub_metering_1, col = "black")
+lines(x = dateTime, y = data$Sub_metering_2, col = "red")
+lines(x = dateTime, y = data$Sub_metering_3, col = "blue")
+legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty = 1,col = c("black","red","blue"))
 dev.off()
+# ,pch = c("-",NA,NA)\\
